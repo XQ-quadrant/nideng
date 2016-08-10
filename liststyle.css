@@ -1,0 +1,34 @@
+.cont{
+    line-height: 30px;
+    background: rgba(208, 208, 208, 0.23);
+    padding-bottom: 10px;
+}
+.padding-left{
+    padding-right: 4px;
+}
+.padding-right{
+    padding-left: 4px;
+}
+.more{
+    text-align: right;
+    padding-right: 25px;
+}
+.daohang{
+    font-size: 20px;
+    padding-left: 5px;
+    border-bottom: 2px solid #bda6a6;
+    color: #a78989;
+    letter-spacing: 5px;
+    font-family: "Microsoft Yahei";
+}
+.morekey{
+
+    position: absolute;
+
+}
+.morekey span{
+    font-size: 16px;
+    color: #ab8b8b;
+    top: 12px;
+    right: 10px;
+}

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--防止在移动设备上出现横向滚动条，initial-scale=1.0用来设置页面的初始比例-->
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="NVpKRmt2bkh0GyV3JwAbZXMUHQ1TASIOfBYhclkQPB9ZEwU.XE8XJw==">
+
+    <title>霓灯</title>
+    <link href="./jQuery-video/css/video-js.min.css" rel="stylesheet"> <!--视屏播放插件-->
+
+    <link href="./adminlte/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="./adminlte/dist/css/AdminLTE.css" rel="stylesheet">
+    <link href="./adminlte/dist/css/self.css" rel="stylesheet">
+    <link href="./adminlte/dist/css/video.css" rel="stylesheet">
+    <link href="./adminlte/dist/css/skins/skin-pblue-light.css" rel="stylesheet">
+    <link rel="stylesheet" href="liststyle.css">
+
+    <!--人气榜-->
+    <link rel="stylesheet" href="renqi/style.css">
+
+    <link rel="stylesheet" href="tabWeek/css/tabWeek.css">
+
+    <style>
+        .row {
+            margin-top:1px;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-pblue-light layout-top-nav">
+    <div class="wrapper" >
+        <div class="breadcrumb_banner" style="">
+        <div id="breadcrumb_wrapper">
+            <div class="container">
+                <img src="./adminlte/dist/img/gray_logo.png"  style="width: 78px;float: left;padding: 0 1em;"/>
+                <a href="/" style="display: inline-block;">
+
+                    <h3  style="display: flex"> 霓 灯 </h3>
+                    <h5 style="display: flex">西南交通大学 校园直播</h5></a>
+
+                <form class="navbar-form navbar-right" role="search" style="float: right;display: inline-block">
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="navbar-search-input" placeholder="搜索">
+                    </div>
+                </form>
+                <a href="#" style="float: right;    margin:18px 1em 0 0;padding-right: 1em;font-size: 0.7em;border-right: 1px solid #ccc">to English</a>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+        <header class="main-header">
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="container" style="padding-right: 15px;padding-left: 15px;">
+                    <div class="navbar-header">
+
+                        <a href="/" class="navbar-brand" >霓 灯</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul id="w0" class="nav navbar-nav"><li><a href="/site/index">首页</a></li>
+                            <li><a href="/frontend/info">同学事</a></li>
+                            <li><a href="/achievement/list">教学</a></li>
+                            <li><a href="/kechuang4/index.php/Admin/Cate">学术</a></li>
+                            <li><a href="/frontend/info?id=55">新闻直播</a></li></ul>            </div>
+                    <div class="navbar-custom-menu">
+
+                        <ul class="nav navbar-nav">
+
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="">
+                                <a href="/user/login" >
+                                    登录
+                                </a>
+                            </li>
+                            <li class="dropdown user user-menu">
+                                <a href="/user/register" >
+                                    注册
+                                </a>
+                            </li>
+                            <!-- User Account: style can be found in dropdown.less -->
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container cont">
+            <div class="row">
+                <div class="col-md-4"  >
+                    <div class="row">
+                        <div class="col-md-6"  >
+                            <span class="daohang"> <span class="glyphicon glyphicon-th-large"></span> 导航1</span>
+                        </div>
+                        <div class="col-md-6 more"  >
+                            <a href="#" class="morekey"> <span class="glyphicon glyphicon-plus"></span> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"  >
+                    <div class="row">
+                        <div class="col-md-6 "  >
+                            <span class="daohang"> <span class="glyphicon glyphicon-th-large"></span> 导航2</span>
+                        </div>
+                        <div class="col-md-6 more"  >
+                            <a href="#" class="morekey"> <span class="glyphicon glyphicon-plus"></span> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"  >
+                    <div class="row">
+                        <div class="col-md-6"  >
+                            <span class="daohang"> <span class="glyphicon glyphicon-th-large"></span> 导航3</span>
+                        </div>
+                        <div class="col-md-6 more"  >
+                            <a href="#" class="morekey"> <span class="glyphicon glyphicon-plus"></span> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 padding-left"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 padding-right"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7"  style="position: relative">
+                    <span class="daohang"> <span class="glyphicon glyphicon-th-large"></span> 导航4</span>
+                    <a href="#" style="position: relative; display: block;color: #ab8b8b;">
+                        <span class="glyphicon glyphicon-plus" style="position: absolute; right: 10px;top: -16px;"></span>
+                    </a>
+                    <div class="row">
+                        <div class="col-md-8"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-4"  >
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"  style="margin-top: 16px;">
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6"  style="margin-top: 16px;">
+                            <video width="100%" controls style="padding-top: 6px;">
+                                <source src="yangli.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5"  style="    padding-left: 35px;">
+                    <span class="daohang"> <span class="glyphicon glyphicon-star-empty"></span>人气榜</span>
+                    <div class="renqi" style="    padding-top: 7px;">
+                        <div id="playimages" class="play">
+                            <ul class="big_pic">
+                                <div class="prev"></div>
+                                <div class="next"></div>
+                                <!--<div class="text">加载图片说明……</div>
+                                <div class="length">计算图片数量……</div>-->
+                                <a class="mark_left" href="javascript:;"></a>
+                                <a class="mark_right" href="javascript:;"></a>
+                                <!--<div class="bg"></div>	-->
+                                <li style="z-index:1;"><img src="renqi/images/120617_pic6.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic7.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic5.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic4.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic3.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic2.jpg" /></li>
+                                <li><img src="renqi/images/120617_pic1.jpg" /></li>
+                            </ul>
+                            <div class="small_pic">
+                                <ul style="width:390px;">
+                                    <li style="filter: 100; opacity: 1;"><img src="renqi/images/120617_pic6.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic7.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic5.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic4.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic3.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic2.jpg" /></li>
+                                    <li><img src="renqi/images/120617_pic1.jpg" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-md-12">
+                    <span class="daohang"> <span class="glyphicon glyphicon-th-large"></span> 直播我先知</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-vertical">
+                        <div class="tab-header">
+                            <div class="tab-item active"><span>直播</span></div>
+                            <div class="tab-line"></div>
+                            <div class="tab-item"><span>状态</span></div>
+                        </div>
+                        <div class="tab-body">
+                            <div class="week-content" id="myWeek">
+                                <div class="week-bar">
+                                    <div class="week-row content"></div>
+                                    <div class="week-row status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer slideanim slide">
+        <div class="container">
+            <div class="footer-info slideanim slide">
+                <div class="col-md-6 col-sm-6 access f1">
+                    <h3 class="access-h3">科创俱乐部</h3>
+                    <p class="access-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation, sed do eiusmod ullamco laboris nisi ut enim ad minim aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 f2">
+                    <h3 class="address">Address</h3>
+                    <address>
+                        <ul class="no-user-agent">
+                            <li>Parma Via Modena</li>
+                            <li>40019 Sant'Agata Bolognese</li>
+                            <li>BO, Italy</li>
+                            <li>Telephone : +1 (734) 123-4567</li>
+                            <li>Email : <a class="mail" href="mailto:mail@example.com">info(at)sseet.com</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-md-2 col-sm-2 f3" id="qlinks">
+                    <h3>Links</h3>
+                    <ul class="footer_list no-user-agent">
+                        <li><a href="#about" class="scroll">About</a></li>
+                        <li><a href="#programs" class="scroll">Programs</a></li>
+                        <li><a href="#services" class="scroll">Services</a></li>
+                        <li><a href="#edifice" class="scroll">Edifice</a></li>
+                        <li><a href="#project" class="scroll">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+            <div class="copyright">
+                <p class="art">Copyright © 2016.Company name All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class='control-sidebar-menu'>
+                    <li>
+                        <a href='javascript::;'>
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                <p class="art">Will be 23 on April 24th</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <i class="menu-icon fa fa-user bg-yellow"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                                <p class="art">New phone +1(800)555-1234</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                                <p class="art">nora@example.com</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                                <p class="art">Execution time 5 seconds</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class='control-sidebar-menu'>
+                    <li>
+                        <a href='javascript::;'>
+                            <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="label label-danger pull-right">70%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <h4 class="control-sidebar-subheading">
+                                Update Resume
+                                <span class="label label-success pull-right">95%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <h4 class="control-sidebar-subheading">
+                                Laravel Integration
+                                <span class="label label-waring pull-right">50%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='javascript::;'>
+                            <h4 class="control-sidebar-subheading">
+                                Back End Framework
+                                <span class="label label-primary pull-right">68%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+
+            </div>
+            <!-- /.tab-pane -->
+
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">General Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked/>
+                        </label>
+
+                        <p class="art">
+                            Some information about this general settings option
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Allow mail redirect
+                            <input type="checkbox" class="pull-right" checked/>
+                        </label>
+
+                        <p class="art">
+                            Other sets of options are available
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Expose author name in posts
+                            <input type="checkbox" class="pull-right" checked/>
+                        </label>
+
+                        <p class="art">
+                            Allow the user to show his name in blog posts
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Show me as online
+                            <input type="checkbox" class="pull-right" checked/>
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Turn off notifications
+                            <input type="checkbox" class="pull-right"/>
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Delete chat history
+                            <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+                </form>
+            </div>
+            <!-- /.tab-pane -->
+        </div>
+    </aside><!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+
+        <!--<script src="./jQuery-video/js/video.min.js"></script> &lt;!&ndash;视屏播放插件&ndash;&gt;-->
+        <script src="./adminlte/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+        <script src="./adminlte/bootstrap/js/bootstrap.js"></script>
+        <!--<script src="./adminlte/dist/js/app.min.js"></script>-->
+
+
+    </div>
+
+
+
+    <!--人气榜-->
+    <script src="renqi/jtb.js"></script>
+    <!--直播我先知-->
+
+    <script src="./tabWeek/js/jquery.min.js"></script>
+    <script src="./tabWeek/js/tabWeek.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            var list= [{
+                date:'2016-12-12',
+                week:'星期一',
+                contentList:[
+                    {type:1,name:'个人秀场',count:5},
+                    {type:2,name:'魔术表演',count:11},
+                    {type:3,name:'游戏现场',count:12},
+                    {type:3,name:'科技直播',count:12}
+                ],
+                statusList:[
+                    {type:1,name:'直播中 ',count:0},
+                    {type:2,name:'以完结 ',count:11},
+                    {type:3,name:'待直播 ',count:12}
+                ]
+            },
+                {
+                    date:'2016-12-13',
+                    week:'星期二',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:2},
+                        {type:3,name:'游戏现场',count:12},
+                        {type:3,name:'科技直播',count:1}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:0},
+                        {type:2,name:'以完结 ',count:11},
+                        {type:3,name:'待直播 ',count:12}
+                    ]
+                },
+                {
+                    date:'2016-12-14',
+                    week:'星期三',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:11},
+                        {type:3,name:'游戏现场',count:12},
+                        {type:3,name:'科技直播',count:6}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:0},
+                        {type:2,name:'以完结 ',count:0},
+                        {type:3,name:'待直播 ',count:4}
+                    ]
+                },
+                {
+                    date:'2016-12-15',
+                    week:'星期四',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:11},
+                        {type:3,name:'游戏现场',count:3},
+                        {type:3,name:'科技直播',count:12}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:4},
+                        {type:2,name:'以完结 ',count:11},
+                        {type:3,name:'待直播 ',count:3}
+                    ]
+                },
+                {
+                    date:'2016-12-16',
+                    week:'星期五',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:11},
+                        {type:3,name:'游戏现场',count:12},
+                        {type:3,name:'科技直播',count:17}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:0},
+                        {type:2,name:'以完结 ',count:5},
+                        {type:3,name:'待直播 ',count:8}
+                    ]
+                },
+                {
+                    date:'2016-12-17',
+                    week:'星期六',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:11},
+                        {type:3,name:'游戏现场',count:8},
+                        {type:3,name:'科技直播',count:12}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:1},
+                        {type:2,name:'以完结 ',count:11},
+                        {type:3,name:'待直播 ',count:2}
+                    ]
+                },
+                {
+                    date:'2016-12-18',
+                    week:'星期日',
+                    contentList:[
+                        {type:1,name:'个人秀场',count:5},
+                        {type:2,name:'魔术表演',count:11},
+                        {type:3,name:'游戏现场',count:12},
+                        {type:3,name:'科技直播',count:12}
+                    ],
+                    statusList:[
+                        {type:1,name:'直播中 ',count:0},
+                        {type:2,name:'以完结 ',count:3},
+                        {type:3,name:'待直播 ',count:12}
+                    ]
+                },
+            ];
+            $("#myWeek").tabWeek(list,function(date,type){
+                if($.trim(type)!=''){
+                    alert("点击业务类型数字:"+date+"--"+type);
+                }else{
+                    alert("点击当天整块:"+date);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
